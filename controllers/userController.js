@@ -39,8 +39,8 @@ export const verifyOtp = async (req, res) => {
             quantity: 1
           }],
           mode: "payment",
-          success_url: "http://127.0.0.1:5500/success.html",
-          cancel_url: "http://127.0.0.1:5500/failure.html",
+          success_url: "https://sciastralimited.netlify.app/success.html",
+          cancel_url: "https://sciastralimited.netlify.app/failure.html",
         });
         res.json({ message: "OTP verified successfully!", sessionId: session.id });
       } catch (error) {
